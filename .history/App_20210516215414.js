@@ -17,7 +17,7 @@ export default function App() {
         onChangeText={ ( val ) => setName( val ) } />
 
       <TextInput
-        keyboardType='numeric'
+        keyboardType=
         style={ styles.input }
         placeholder='age'
         onChangeText={ ( val ) => setAge( val ) } />

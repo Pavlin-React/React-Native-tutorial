@@ -11,13 +11,12 @@ export default function App() {
     <View style={styles.container}>
       <Text>Enter name: </Text>
       <TextInput
-        multiline
+      multiline
         style={ styles.input }
         placeholder='mario'
         onChangeText={ ( val ) => setName( val ) } />
 
       <TextInput
-        keyboardType='numeric'
         style={ styles.input }
         placeholder='age'
         onChangeText={ ( val ) => setAge( val ) } />

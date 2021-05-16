@@ -10,17 +10,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Enter name: </Text>
-      <TextInput
-        multiline
-        style={ styles.input }
-        placeholder='mario'
-        onChangeText={ ( val ) => setName( val ) } />
-
-      <TextInput
-        keyboardType='numeric'
-        style={ styles.input }
-        placeholder='age'
-        onChangeText={ ( val ) => setAge( val ) } />
+      <TextInput style={ styles.input } />
 
       <Text>name: { name }, age: { age }</Text>
     </View>
