@@ -23,6 +23,7 @@ export default function App() {
           <Text style={ styles.item }>{ item.name }</Text>
         </View>
         )
+        return 
        ) }
       </ScrollView>
 

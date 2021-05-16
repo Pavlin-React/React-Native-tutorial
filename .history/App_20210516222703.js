@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { StyleSheet, Text, View, ScrollView } from "react-native";
+import { StyleSheet, Text, View, TextInput } from "react-native";
 
 export default function App() {
 
@@ -16,16 +16,8 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-
-      <ScrollView>
-      { people.map( (item) => (
-        <View key={ item.key }>
-          <Text style={ styles.item }>{ item.name }</Text>
-        </View>
-        )
-       ) }
-      </ScrollView>
-
+      
+      
     </View>
   );
 }
@@ -39,10 +31,4 @@ const styles = StyleSheet.create({
     // alignItems: "center",
     // justifyContent: "center",
   },
-  item: {
-    marginTop: 24,
-    padding: 30,
-    backgroundColor: 'pink',
-    fontSize: 24,
-  }
 });
