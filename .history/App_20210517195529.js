@@ -13,7 +13,7 @@ export default function App() {
   
   return (
     <View style={styles.container}>
-      <Header />
+      <Header
       <View style={ styles.content }>
         {/*to form */}
         <View style={ styles.list }>
