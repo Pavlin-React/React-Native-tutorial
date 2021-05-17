@@ -2,28 +2,6 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, View, FlatList, TouchableOpacity } from "react-native";
 
-export default function App() {
-
-  let [people, setPeople] = useState( [
-    { name: 'shaun', id: '1' },
-    { name: 'mario', id: '2' },
-    { name: 'luigi', id: '3' },
-    { name: 'tobi', id: '4' },
-    { name: 'juji', id: '5' },
-    { name: 'niki', id: '6' },
-    { name: 'yuri', id: '7' },
-    { name: 'baba', id: '8' },
-    { name: 'toni', id: '9' },
-    { name: 'koki', id: '10' },
-  ] )
-
-  let handlePress = (id) => {
-    console.log(id);
-    setPeople((prevPeople) => {
-      return prevPeople.filter(person => person.id != id)
-    })
-  }
-
   return (
     <View style={styles.container}>
 

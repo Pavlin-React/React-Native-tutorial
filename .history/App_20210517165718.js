@@ -14,15 +14,7 @@ export default function App() {
     { name: 'yuri', id: '7' },
     { name: 'baba', id: '8' },
     { name: 'toni', id: '9' },
-    { name: 'koki', id: '10' },
   ] )
-
-  let handlePress = (id) => {
-    console.log(id);
-    setPeople((prevPeople) => {
-      return prevPeople.filter(person => person.id != id)
-    })
-  }
 
   return (
     <View style={styles.container}>
@@ -31,9 +23,7 @@ export default function App() {
         keyExtractor={ ( item ) => item.id }
         data={ people }
         renderItem={ ( { item } ) => (
-          <TouchableOpacity onPress={() => handlePress(item.id)}>
-            <Text style={styles.item }>{ item.name }</Text>
-          </TouchableOpacity>
+          <T
         ) }
       />
 

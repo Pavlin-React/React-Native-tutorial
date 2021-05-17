@@ -14,7 +14,6 @@ export default function App() {
     { name: 'yuri', id: '7' },
     { name: 'baba', id: '8' },
     { name: 'toni', id: '9' },
-    { name: 'koki', id: '10' },
   ] )
 
   let handlePress = (id) => {
