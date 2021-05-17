@@ -1,33 +1,37 @@
 
 import React, { useState } from "react";
-import { StyleSheet, Text, View, FlatList } from "react-native";
+import { StyleSheet, Text, View, ScrollView, FlatList } from "react-native";
 
 export default function App() {
 
   let [people, setPeople] = useState( [
-    { name: 'shaun', id: '1' },
-    { name: 'mario', id: '2' },
-    { name: 'luigi', id: '3' },
-    { name: 'tobi', id: '4' },
-    { name: 'juji', id: '5' },
-    { name: 'niki', id: '6' },
-    { name: 'yuri', id: '7' },
-    { name: 'baba', id: '8' },
-    { name: 'browser', id: '9' },
-    { name: 'tono', id: '10' },
+    { name: 'shaun', key: '1' },
+    { name: 'mario', key: '2' },
+    { name: 'luigi', key: '3' },
+    { name: 'tobi', key: '4' },
+    { name: 'juji', key: '5' },
+    { name: 'niko', key: '6' },
+    { name: 'yuri', key: '7' },
   ] )
 
   return (
     <View style={styles.container}>
 
       <FlatList
-        numColumns={2}
-        keyExtractor={ ( item ) => item.id }
         data={ people }
         renderItem={ ( { item } ) => (
-          <Text style={styles.item }>{ item.name }</Text>
+          <Text style={ styles.item } >{ item.name }</Text>
         ) }
       />
+
+      {/* <ScrollView>
+      { people.map( (item) => (
+        <View key={ item.key }>
+          <Text style={ styles.item }>{ item.name }</Text>
+        </View>
+        )
+       ) }
+      </ScrollView> */}
 
     </View>
   );
@@ -47,7 +51,5 @@ const styles = StyleSheet.create({
     padding: 30,
     backgroundColor: 'pink',
     fontSize: 24,
-    marginHorizontal: 10,
-    marginTop: 24,
   }
 });

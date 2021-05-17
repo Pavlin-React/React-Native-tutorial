@@ -48,6 +48,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'pink',
     fontSize: 24,
     marginHorizontal: 10,
-    marginTop: 24,
+    marginTop
   }
 });

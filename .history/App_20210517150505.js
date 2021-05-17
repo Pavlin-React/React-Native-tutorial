@@ -14,14 +14,13 @@ export default function App() {
     { name: 'yuri', id: '7' },
     { name: 'baba', id: '8' },
     { name: 'browser', id: '9' },
-    { name: 'tono', id: '10' },
+    { name: 'toni', id: '10' },
   ] )
 
   return (
     <View style={styles.container}>
 
       <FlatList
-        numColumns={2}
         keyExtractor={ ( item ) => item.id }
         data={ people }
         renderItem={ ( { item } ) => (
@@ -47,7 +46,5 @@ const styles = StyleSheet.create({
     padding: 30,
     backgroundColor: 'pink',
     fontSize: 24,
-    marginHorizontal: 10,
-    marginTop: 24,
   }
 });
