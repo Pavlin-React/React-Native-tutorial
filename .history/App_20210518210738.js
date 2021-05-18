@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { MaterialIcons } from '@expo/vector-icons';
 import {
   Alert,
   FlatList,
@@ -45,7 +45,7 @@ export default function App() {
         <View style={styles.content}>
           <AddTodo submitHandler={submitHandler} />
           <View style={styles.list}>
-            
+          <MaterialIcons name="delete" size={24} color="black" />
             <FlatList
               data={todos}
               renderItem={({ item }) => (
@@ -67,10 +67,12 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
+    backgroundColor: 'skyblue',
     padding: 40,
   },
   list: {
     flex: 1,
+    backgroundColor: 'yellow',
     marginTop: 20,
   },
 });

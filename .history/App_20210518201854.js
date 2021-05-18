@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import {
   Alert,
   FlatList,
@@ -14,7 +13,7 @@ import TodoItem from "./components/TodoItem";
 
 export default function App() {
   let [todos, setTodos] = useState([
-    { text: "buy coffee", key: "1" },
+    { text: "buy coffeeo", key: "1" },
     { text: "create an app", key: "2" },
     { text: "play on the switch", key: "3" },
   ]);
@@ -36,27 +35,26 @@ export default function App() {
   };
 
   return (
-    <TouchableWithoutFeedback onPress={ () => {
-      Keyboard.dismiss()
-      console.log( 'dismissing keyboard' );
-    } }>
-      <View style={styles.container}>
-        <Header />
-        <View style={styles.content}>
-          <AddTodo submitHandler={submitHandler} />
-          <View style={styles.list}>
-            
-            <FlatList
-              data={todos}
-              renderItem={({ item }) => (
-                <TodoItem item={item} pressHandler={pressHandler} />
-              )}
-            />
-          </View>
-        </View>
-      </View>
-    </TouchableWithoutFeedback>
-    // <Sandbox />
+    // <TouchableWithoutFeedback onPress={ () => {
+    //   Keyboard.dismiss()
+    //   console.log( 'dismissing keyboard' );
+    // } }>
+    //   <View style={styles.container}>
+    //     <Header />
+    //     <View style={styles.content}>
+    //       <AddTodo submitHandler={submitHandler} />
+    //       <View style={styles.list}>
+    //         <FlatList
+    //           data={todos}
+    //           renderItem={({ item }) => (
+    //             <TodoItem item={item} pressHandler={pressHandler} />
+    //           )}
+    //         />
+    //       </View>
+    //     </View>
+    //   </View>
+    // </TouchableWithoutFeedback>
+    <Sandbox /
   );
 }
 
@@ -66,11 +64,9 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   content: {
-    flex: 1,
     padding: 40,
   },
   list: {
-    flex: 1,
     marginTop: 20,
   },
 });

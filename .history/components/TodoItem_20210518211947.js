@@ -8,7 +8,7 @@ const TodoItem = ( { item, pressHandler } ) => {
     <TouchableOpacity onPress={ ()  => pressHandler( item.key ) }>
       <View style = { styles.item }>
         <MaterialIcons name="delete" size={24}/>
-        <Text style={ styles.itemText }>{ item.text }</Text>
+        <Text style={ styles.item }>{ item.text }</Text>
       </View>
     </TouchableOpacity>
   );
@@ -17,16 +17,14 @@ const TodoItem = ( { item, pressHandler } ) => {
 let styles = StyleSheet.create( {
   item: {
     flexDirection: 'row',
+    paddingLeft: 20,
     padding: 16,
     marginTop: 16,
     borderColor: '#bbb',
     borderWidth: 1,
     borderStyle: 'dashed',
     borderRadius: 10,
-  },
-  itemText: {
-    marginLeft: 20,
-  },
+  }
 } )
  
 export default TodoItem;

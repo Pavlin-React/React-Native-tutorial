@@ -45,7 +45,6 @@ export default function App() {
         <View style={styles.content}>
           <AddTodo submitHandler={submitHandler} />
           <View style={styles.list}>
-            
             <FlatList
               data={todos}
               renderItem={({ item }) => (
@@ -67,10 +66,12 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
+    backgroundColor: 'skyblue',
     padding: 40,
   },
   list: {
     flex: 1,
+    backgroundColor: 'yellow',
     marginTop: 20,
   },
 });

@@ -37,7 +37,6 @@ let styles =StyleSheet.create({
     backgroundColor: 'blue',
   },
   boxFour: {
-    flex: 1,
     padding: 40,
     backgroundColor: 'green',
   },

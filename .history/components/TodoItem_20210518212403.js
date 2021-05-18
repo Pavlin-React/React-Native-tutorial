@@ -25,7 +25,7 @@ let styles = StyleSheet.create( {
     borderRadius: 10,
   },
   itemText: {
-    marginLeft: 20,
+    marginLeft: 10,
   },
 } )
  

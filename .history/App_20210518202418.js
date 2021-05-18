@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import {
   Alert,
   FlatList,
@@ -45,7 +44,6 @@ export default function App() {
         <View style={styles.content}>
           <AddTodo submitHandler={submitHandler} />
           <View style={styles.list}>
-            
             <FlatList
               data={todos}
               renderItem={({ item }) => (
@@ -66,11 +64,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   content: {
-    flex: 1,
+    back
     padding: 40,
   },
   list: {
-    flex: 1,
     marginTop: 20,
   },
 });

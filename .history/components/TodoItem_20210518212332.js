@@ -23,10 +23,7 @@ let styles = StyleSheet.create( {
     borderWidth: 1,
     borderStyle: 'dashed',
     borderRadius: 10,
-  },
-  itemText: {
-    marginLeft: 20,
-  },
+  }
 } )
  
 export default TodoItem;

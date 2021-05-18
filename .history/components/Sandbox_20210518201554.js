@@ -22,7 +22,7 @@ let styles =StyleSheet.create({
     backgroundColor: '#ddd'
   },
   boxOne: {
-    flex: 1,
+    flex: 2,
     padding: 10,
     backgroundColor: 'pink',
   },

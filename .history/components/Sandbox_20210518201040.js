@@ -27,17 +27,14 @@ let styles =StyleSheet.create({
     backgroundColor: 'pink',
   },
   boxTwo: {
-    flex: 1,
     padding: 20,
     backgroundColor: 'yellow',
   },
   boxThree: {
-    flex: 1,
     padding: 30,
     backgroundColor: 'blue',
   },
   boxFour: {
-    flex: 1,
     padding: 40,
     backgroundColor: 'green',
   },
