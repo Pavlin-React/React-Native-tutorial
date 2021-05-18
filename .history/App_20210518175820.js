@@ -34,10 +34,7 @@ export default function App() {
   };
 
   return (
-    <TouchableWithoutFeedback onPress={ () => {
-      Keyboard.dismiss()
-      console.log( 'dismissing keyboard' );
-    } }>
+    <TouchableWithoutFeedback onPress={}>
       <View style={styles.container}>
         <Header />
         <View style={styles.content}>
