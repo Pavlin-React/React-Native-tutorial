@@ -54,7 +54,7 @@ export default function App() {
     //     </View>
     //   </View>
     // </TouchableWithoutFeedback>
-    <Sandbox />
+    <Sandbox
   );
 }
 

@@ -8,7 +8,6 @@ import {
 import { Keyboard, Text, View } from "react-native";
 import AddTodo from "./components/AddTodo";
 import Header from "./components/Header";
-import Sandbox from "./components/Sandbox";
 import TodoItem from "./components/TodoItem";
 
 export default function App() {
@@ -54,7 +53,7 @@ export default function App() {
     //     </View>
     //   </View>
     // </TouchableWithoutFeedback>
-    <Sandbox />
+    <Sandb
   );
 }
 
