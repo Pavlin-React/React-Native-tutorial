@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { Alert, FlatList, StyleSheet, Text, View } from "react-native";
+import { FlatList, StyleSheet, Text, View } from "react-native";
 import AddTodo from "./components/AddTodo";
 import Header from "./components/Header";
 import TodoItem from './components/TodoItem'
@@ -27,9 +27,7 @@ export default function App() {
           ...prev
         ]
       })
-    } else {
-      Alert.alert('Ooops', 'Todo must be at least 3 chars long')
-    }
+    } else 
   }
   
   return (

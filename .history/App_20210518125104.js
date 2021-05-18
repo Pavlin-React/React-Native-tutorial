@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { Alert, FlatList, StyleSheet, Text, View } from "react-native";
+import { FlatList, StyleSheet, Text, View } from "react-native";
 import AddTodo from "./components/AddTodo";
 import Header from "./components/Header";
 import TodoItem from './components/TodoItem'
@@ -20,16 +20,7 @@ export default function App() {
   }
 
   let submitHandler = (text) => {
-    if ( text.length > 3 ) {
-      setTodos((prev) => {
-        return [
-          {text, key: Math.random().toString()},
-          ...prev
-        ]
-      })
-    } else {
-      Alert.alert('Ooops', 'Todo must be at least 3 chars long')
-    }
+    if (  )
   }
   
   return (

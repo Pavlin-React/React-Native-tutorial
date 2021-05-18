@@ -28,7 +28,7 @@ export default function App() {
         ]
       })
     } else {
-      Alert.alert('Ooops', 'Todo must be at least 3 chars long')
+      Alert.alert('Ooops', 'Todo must be at least 3 chars long', [text: 'Undertend])
     }
   }
   
