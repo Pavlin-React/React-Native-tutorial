@@ -32,7 +32,7 @@ export default function App() {
     <View style={styles.container}>
       <Header />
       <View style={ styles.content }>
-        <AddTodo submitHandler={submitHandler}/>
+        <AddTodo />
         <View style={ styles.list }>
           <FlatList
             data={ todos }
